@@ -6,9 +6,6 @@
 (def bad-tea-service {:chan (async/chan 10) :name "bad service"})
 (def result-channel (async/chan 10))
 
-(defn random-add []
-  (reduce + (conj [] (repeat 1 (rand-int 10000)))))
-
 (defn request-tea-service [tea-provider]
   (async/go
     (Thread/sleep (int (* (java.lang.Math/random) 1000)))
