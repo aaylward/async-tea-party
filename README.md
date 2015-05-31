@@ -1,14 +1,10 @@
-# async-tea-party
+# stuff from living clojure
 
-gently modified channel example from [Living Clojure](http://www.amazon.com/Living-Clojure-Carin-Meier/dp/1491909048/)
-
-## Usage
-
-FIXME
+[Living Clojure](http://www.amazon.com/Living-Clojure-Carin-Meier/dp/1491909048/)
 
 ## License
 
-Copyright © 2015 FIXME
+Copyright © 2015 TODO
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
