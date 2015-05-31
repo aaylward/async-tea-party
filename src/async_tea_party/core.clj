@@ -6,11 +6,11 @@
 (def bad-tea-service {:chan (async/chan 10) :name "bad service"})
 (def result-channel (async/chan 10))
 
-(defn request-tea-service [tea-provider]
+(defn request-tea-service [{:keys [chan name]}]
   (async/go
     (Thread/sleep (int (* (java.lang.Math/random) 1000)))
-    (async/>! (tea-provider :chan)
-              (str "tea compliments of " (tea-provider :name)))))
+    (async/>! chan
+              (str "tea compliments of " name))))
 
 (defn request-tea []
   (request-tea-service good-tea-service)
