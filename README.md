@@ -1,6 +1,6 @@
 # async-tea-party
 
-A Clojure library designed to ... well, that part is up to you.
+gently modified channel example from [Living Clojure](http://www.amazon.com/Living-Clojure-Carin-Meier/dp/1491909048/)
 
 ## Usage
 
