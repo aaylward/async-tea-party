@@ -5,5 +5,6 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [org.clojure/core.async "0.1.346.0-17112a-alpha"]]
+  :uberjar-name "tea-service.jar"
   :main async-tea-party.core
   :aot [async-tea-party.core])

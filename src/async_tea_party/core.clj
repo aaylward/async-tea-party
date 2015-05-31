@@ -11,7 +11,7 @@
 
 (defn request-tea-service [tea-provider]
   (async/go
-    (random-add)
+    (Thread/sleep (int (* (java.lang.Math/random) 1000)))
     (async/>! (tea-provider :chan)
               (str "tea compliments of " (tea-provider :name)))))
 
